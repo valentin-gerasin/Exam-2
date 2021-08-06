@@ -1,0 +1,154 @@
+.footer {
+    background-image:  url(images/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 524px;
+    position: relative;
+
+    &__container {
+        max-width: 770px;
+        width: 100%;
+        min-height: 524px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 50px;
+        margin: 0 auto ;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        max-width: 770px;
+        width: 100%;
+        min-height: 54px;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    &__links-container {
+        display: flex;
+        justify-content: space-between;
+        width: 161px;
+    }
+
+    .footer-links__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFFFFF;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .i-color {
+        color: #FFFFFF;
+    }
+
+    .footer-links__box:hover {
+        background-color: hsl(205, 21%, 78%);
+        transition: 400ms;
+        cursor: pointer;
+
+        .i-color:hover {
+            color: #7D5FFA;
+        }
+    }
+
+    &__logo {
+        max-width: 241px;
+        min-height: 54px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        max-width: 410px;
+        width: 100%;
+    }
+
+    &__heart {
+        width: 15px;
+        height: 12px;
+    }
+
+    &__copyrights {
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    &__copyrights-separator {
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    &__copyrights-colaborator {
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .footer {
+        min-height: 524px;
+
+        .footer__container {
+            margin-top: -20px;
+        }
+    
+        .footer__container {
+            min-height: 300px;
+            padding: 0 10px;
+        }
+
+        .footer__info {
+            margin-bottom: 30px;
+        }
+
+        .footer__links-container {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .footer {
+        .footer__container {
+            margin-top: 110px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px){
+    .footer {
+        min-height: 524px;
+    
+        .footer__container {
+            margin-top: 150px;
+        }
+        .footer__links {
+            flex-direction: column;
+        }
+
+        .footer__info {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .footer__copyrights {
+            margin-bottom: 20px;
+        }
+
+        .footer__copyrights-separator {
+            display: none;
+        }
+    }
+}
+

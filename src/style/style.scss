@@ -1,0 +1,26 @@
+@import "reset";
+@import "variables";
+@import "header";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "modal-section";
+@import "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+/*font-family: 'Open Sans', sans-serif; 400, 400 italic */
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('fonts/MyriadPro-Regular.eot');
+    src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MyriadPro-Regular.woff') format('woff'),
+    url('fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { font-family: 'Gotham-Bold';  src: local('Gotham-Bold'), url('https://nomail.com.ua/files/woff/722c5f898bbca8b2eb3fce0287688326.woff') format('woff'); }
+@font-face { font-family: 'Gotham-Book';  src: local('Gotham-Book'), url('https://nomail.com.ua/files/woff/b54724f54d4dd3f6796e3c4cc422f998.woff') format('woff'); }
+@font-face { font-family: 'Gotham-Medium';  src: local('Gotham-Medium'), url('https://nomail.com.ua/files/woff/77171d8f5b5283f9d47a3434704bf944.woff') format('woff'); }
+

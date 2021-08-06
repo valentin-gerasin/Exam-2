@@ -1,0 +1,215 @@
+.modal-section {
+    min-height: 450px;
+    position: absolute;
+    top: -300px;
+    left: calc(50% - 385px);
+    background-color: #FFFFFF;
+    max-width: 770px;
+    width: 100%;
+    min-height: 450px;
+    
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        min-height: 450px;
+        background-color: #FFFFFF;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'Gotham-Bold';
+        font-size: 44px;
+        color: #2C4058;
+        padding-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    &__title-line {
+        content: '2020';
+        border-bottom: 1px solid #2C4058;
+        max-width: 100px;
+        width: 100%;
+        height: 1px;
+        padding-top: 60px;
+        margin: 0 auto ;
+    }
+
+    &__info {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list-element {
+        font-family: 'Gotham-Medium'; 
+        font-size: 18px;
+        color: #2C4058;
+        margin-bottom: 45px;
+    }
+
+    &__map-marker {
+        width: 11px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    &__phone {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    &__inbox {
+        width: 16px;
+        height: 13px;
+        margin-right: 10px;
+    }
+
+    &__clock {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 50px;
+    }
+
+    &__name {
+        width: 310px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #D5D9DE;
+        margin-bottom: 35px;
+        margin-top: -10px;
+        font-family: 'Gotham-Medium'; 
+        font-size: 18px;
+        color: #2C4058;
+    }
+
+    &__name:focus {
+        outline: none;
+        border-bottom: 1px solid #2C4058;
+    }
+
+    &__name:active {
+        border-bottom: 1px solid #2C4058;
+    }
+
+    &__name:hover {
+        border-bottom: 1px solid #2C4058;
+    }
+
+    &__name::placeholder {
+        font-family: 'Gotham-Book'; 
+        font-size: 18px;
+        color: #A5AAB0;
+    }
+
+    &__email {
+        width: 310px;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #D5D9DE;
+        margin-bottom: 35px;
+        font-family: 'Gotham-Medium'; 
+        font-size: 18px;
+        color: #2C4058;
+    }
+
+    &__email:focus {
+        outline: none;
+        border-bottom: 1px solid #2C4058;
+    }
+
+    &__email:active {
+        border-bottom: 1px solid #2C4058;
+    }
+
+    &__email:hover {
+        border-bottom: 1px solid #2C4058;
+    }
+
+    &__email::placeholder {
+        font-family: 'Gotham-Book'; 
+        font-size: 18px;
+        color: #A5AAB0;
+    }
+
+    &__button {
+        width: 140px;
+        height: 50px;
+        border: 1px solid #2C4058;
+        background-color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    &__button:hover {
+        background-color: hsl(210, 23%, 91%);
+        color: #7E5AFF;
+        border: 1px solid #7E5AFF;
+        transition: 400ms;
+    }
+
+    &__button:active {
+        opacity: 0.7;
+    } 
+
+}
+
+
+@media screen and (max-width: 800px){
+    .modal-section {
+        min-height: 450px;
+        position: inherit;
+        top: 0px;
+        left: 0px;
+        max-width: 800px;
+        width: 100%;
+        max-height: 450px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .modal-section {
+        .modal-section__title-line {
+            padding-top: 40px;
+        }
+        .modal-section__title {
+            margin-bottom: 40px;
+        }
+        .modal-section__list-element {
+            margin-bottom: 40px;
+            padding: 0 10px;
+        }
+        .modal-section__form {
+            margin-left: 0;
+            align-items: center;
+        }
+        .modal-section__info {
+            flex-direction: column;
+        }
+        .modal-section__button {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 340px){
+    .modal-section {
+            .modal-section__title {
+                font-size: 34px;
+            margin-bottom: 20px;
+        }
+    }
+}

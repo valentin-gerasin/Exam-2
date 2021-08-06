@@ -1,0 +1,296 @@
+.section-second {
+    background-color: #FFFFFF;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'Gotham-Bold';
+        font-size: 44px;
+        color: #2C4058;
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+
+    &__title-line {
+        content: '';
+        border-bottom: 1px solid #2C4058;
+        max-width: 100px;
+        width: 100%;
+        min-height: 1px;
+        padding-top: 99px;
+        margin: 0 auto ;
+    }
+
+    &__img-first {
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 540px;
+    }
+
+    &__img-first-alone {
+        display: none;
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 100%;
+    }
+
+    &__img-second {
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 540px;
+    }
+
+    &__img-second-alone {
+        display: none;
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 100%;
+    }
+
+    &__part-one {
+        display: flex;
+    }
+
+    .part-one__information {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-top: 127px;
+    }
+
+    .part-one__subtitle {
+        font-family: 'Gotham-Book';
+        font-size: 22px;
+        color: #2C4058;
+        margin-bottom: 6px;
+    }
+
+    .part-one__title {
+        font-family: 'Gotham-Bold';
+        font-size: 44px;
+        color: #2C4058;
+    }
+
+    .part-one__text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2C4058;
+        max-width: 470px;
+        width: 100%;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+
+    .part-one__button {
+        border: 1px solid #2C4058;
+        background-color: #FFFFFF;
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        width: 190px;
+        height: 50px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+    
+    .part-one__button:hover {
+        background-color: hsl(210, 23%, 91%);
+        color: #7E5AFF;
+        border: 1px solid #7E5AFF;
+        transition: 400ms;
+    }
+
+    .part-one__button:active {
+        opacity: 0.7;
+    }
+
+    .fa-map-marker-alt {
+        width: 20px;
+        height: 15px;
+    }
+
+    .part-one__location-info {
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 58px;
+    }
+
+    &__part-two {
+        display: flex;
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+
+    .part-two__information {
+        display: flex;
+        flex-direction: column;
+        margin-top: 127px;
+        margin-left: 215px;
+        margin-right: 70px;
+    }
+
+    .part-two__subtitle {
+        font-family: 'Gotham-Book';
+        font-size: 22px;
+        color: #2C4058;
+        margin-bottom: 6px;
+    }
+
+    .part-two__title {
+        font-family: 'Gotham-Bold';
+        font-size: 44px;
+        color: #2C4058;
+    }
+
+    .part-two__text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2C4058;
+        max-width: 470px;
+        width: 100%;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+
+    .part-two__button {
+        border: 1px solid #2C4058;
+        background-color: #FFFFFF;
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        max-width: 190px;
+        width: 100%;
+        min-height: 50px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+    
+    .part-two__button:hover {
+        background-color: hsl(210, 23%, 91%);
+        color: #7E5AFF;
+        border: 1px solid #7E5AFF;
+        transition: 400ms;
+    }
+
+    .part-two__button:active {
+        opacity: 0.7;
+    }
+
+    .part-two__location-info {
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 58px;
+    }
+
+}
+
+@media screen and (max-width: 1600px){
+    .section-second {
+
+        .section-second__title-line {
+            padding-top: 40px;
+        }
+
+        .section-second__title {
+            margin-bottom: 20px;
+        }
+        .section-second__part-one {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-second__part-two {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .section-second__img-first {
+            display: none;
+        }
+    
+        .section-second__img-first-alone {
+            display: block;
+        }
+    
+        .section-second__img-second {
+            display: none;
+        }
+    
+        .section-second__img-second-alone {
+            display: block;
+        }
+
+        .part-one__information {
+            text-align: center;
+            margin: 0;
+            margin-top: 40px;
+        }
+        .part-one__button {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .part-two__information {
+            text-align: center;
+            margin: 0;
+            margin-top: 40px;
+        }
+        .part-two__button {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section-second {
+        .part-one__subtitle {
+            font-size: 18px;
+        }
+    
+        .part-one__title {
+            font-size: 34px;
+        }
+    
+        .part-one__text {
+            padding: 0 10px;
+        }
+
+        .part-two__subtitle {
+            font-size: 18px;
+        }
+    
+        .part-two__title {
+            font-size: 34px;
+        }
+    
+        .part-two__text {
+            padding: 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .section-second {
+        .section-second__title {
+            font-size: 34px;
+        }
+    }
+}
